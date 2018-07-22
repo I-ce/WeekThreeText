@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="商品详情"
+        android:id="@+id/home_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.example.weekthreetext.widget.XBanner
+        android:id="@+id/x_banner"
+        app:delay="3000"
+        app:point_width="60"
+        app:point_height="60"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></com.example.weekthreetext.widget.XBanner>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_refresh1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

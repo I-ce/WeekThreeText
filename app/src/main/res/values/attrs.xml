@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="XBanner">
+        <attr name="delay" format="integer"/>
+        <attr name="point_width" format="integer"/>
+        <attr name="point_height" format="integer"/>
+    </declare-styleable>
+</resources>
